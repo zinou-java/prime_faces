@@ -27,7 +27,7 @@
 
 
 
-            <p:dataTable var="equipement" value="#{equipementBean.equipementService.findAll()}">
+            <p:dataTable var="equipement" value="#{equipementBean.equipementService.findAll}">
                 <p:column headerText="Id">
                     <h:outputText value="#{equipement.id}" />
                 </p:column>
