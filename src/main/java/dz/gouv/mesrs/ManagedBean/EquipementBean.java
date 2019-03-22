@@ -3,11 +3,11 @@ package dz.gouv.mesrs.ManagedBean;
 
 import dz.gouv.mesrs.model.Equipement;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
+import javax.inject.Named;
 import java.util.List;
 
-@Component("equipementBean")
+@Named("equipementBean")
 @Scope("request")
 public class EquipementBean extends  BaseBean{
 
@@ -19,7 +19,7 @@ public class EquipementBean extends  BaseBean{
 
     public void getAll(){
         equipements = equipementService.findAll();
-        equipements.stream().forEach(e-> System.out.println("-----------------------"+e.getLabelEquipement()));
+        equipements.stream().forEach(e-> System.out.println("-----------------------"+e.getIdentifiantName()));
 
     }
 

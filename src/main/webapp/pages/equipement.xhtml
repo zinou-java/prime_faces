@@ -4,41 +4,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:p="http://primefaces.org/ui"
+>
 <h:head/>
 <h:body>
-    <ui:composition template="template/fullPageLayout.xhtml">
+    <ui:composition template="/pages/template/fullPageLayout.xhtml">
         <ui:define name="content">
-
-
-
-                    <p:outputPanel id="outputpanel">
-                        <p:outputLabel>fffffffffff</p:outputLabel>
-
-                        <p:commandButton id="fffff"
-                                         value="ffffffffffff"
-                                         actionListener="#{equipementBean.getAll}"></p:commandButton>
-
-                    </p:outputPanel>
-                    <p:commandButton id="fffffff"
-                                     value="ffffffffffff"
-                                     actionListener="#{equipementBean.getAll()}"></p:commandButton>
-
-
-
 
             <p:dataTable var="equipement" value="#{equipementBean.equipementService.findAll()}">
                 <p:column headerText="Id">
-                    <h:outputText value="#{equipement.id}" />
+                    <h:outputText value="#{equipement.id}"/>
                 </p:column>
 
                 <p:column headerText="Equipement Label">
-                    <h:outputText value="#{equipement.labelEquipement}" />
+                    <h:outputText value="#{equipement.labelEquipement}"/>
                 </p:column>
             </p:dataTable>
 
         </ui:define>
     </ui:composition>
-
 </h:body>
 </html>

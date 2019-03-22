@@ -1,7 +1,6 @@
 package dz.gouv.mesrs.services.impl;
 
 
-
 import dz.gouv.mesrs.dao.CommonDao;
 import dz.gouv.mesrs.dao.EquipementDao;
 

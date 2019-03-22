@@ -169,7 +169,6 @@ public class RefEtablissement extends BaseEntity {
 		this.llEtablissementArabe = llEtablissementArabe;
 	}
 
-
 	public String getLlEtablissementLatin() {
 		return this.llEtablissementLatin;
 	}
@@ -178,16 +177,9 @@ public class RefEtablissement extends BaseEntity {
 		this.llEtablissementLatin = llEtablissementLatin;
 	}
 
-
-
-
 	public void setLogo(byte[] logo) {
 		this.logo = logo;
 	}
-
-
-
-
 
 	public String getDecret() {
 		return this.decret;
@@ -205,8 +197,6 @@ public class RefEtablissement extends BaseEntity {
 	// public void setRefHistoriques(Set<RefHistorique> refHistoriques) {
 	// this.refHistoriques = refHistoriques;
 	// }
-
-	
 
 	public String getAncienCode() {
 		return ancienCode;
@@ -234,8 +224,6 @@ public class RefEtablissement extends BaseEntity {
 		this.longitude = longitude;
 	}
 
-	
-
 	public Boolean getEtatblissementEnseignementSuperieur() {
 		return etatblissementEnseignementSuperieur;
 	}
@@ -243,8 +231,6 @@ public class RefEtablissement extends BaseEntity {
 	public void setEtatblissementEnseignementSuperieur(Boolean etatblissementEnseignementSuperieur) {
 		this.etatblissementEnseignementSuperieur = etatblissementEnseignementSuperieur;
 	}
-
-	
 
 	public Boolean getActive() {
 		return active;
