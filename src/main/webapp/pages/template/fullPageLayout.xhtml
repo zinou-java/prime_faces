@@ -12,7 +12,7 @@
       xmlns:pe="http://primefaces.org/ui/extensions">
 <f:view contentType="text/html" locale="#{localBean.localeCode}">
     <h:head>
-        <style>
+        <style type="text/css">
             .fa-stack[data-count]:after {
                 position: absolute;
                 right: 0%;
@@ -99,7 +99,7 @@
 
         </style>
         <script type="javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-121540711-1"></script>
-        <script>
+        <script type="javascript">
             window.dataLayer = window.dataLayer || [];
 
             function gtag() {
@@ -154,15 +154,11 @@
 
             </div>
 
-
-            <!-- projects dropdown --> <h:form>
-            <div id="project-context" dir="#{localBean.dir}" style="width: 60%;text-align: center">
+            <h:form>
+            <div id="project-context"  style="width: 60%;text-align: center">
 
 				<span class="label">
 					<p:row rendered="#{localBean.locale=='ar_dz'}">
-						<!--<p:outputLabel value="#{projet.application_pays_name}  "-->
-                        <!--styleClass="pull-right"-->
-                        <!--style="font-size: 14px"/>-->
 
                         <p:outputLabel value="#{projet.application_mesrs_name}"
 
@@ -174,9 +170,6 @@
                                         styleClass="pull-left"/>
 					</p:row>
                 <p:row rendered="#{localBean.locale!='ar_dz'}">
-                    <!--<p:outputLabel value="#{projet.application_pays_name}"-->
-                    <!--style="font-size: 12px"/>-->
-
                     <p:outputLabel value="#{projet.application_mesrs_name}"
 
                                    style="font-size: 14px"/>
@@ -198,8 +191,7 @@
                 <p:row rendered="#{loginBean.compte ne null}">
                     <ul class="nav navbar-nav pull-right panel-menu">
 
-                        <li class="dropdown"><a href="#"
-                                                class="dropdown-toggle account" data-toggle="dropdown">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle account" data-toggle="dropdown">
 
 
                             <!--<i class="fa fa-bell-o" style="font-size: 30px; float:left ; color: white ; position: center" >-->
