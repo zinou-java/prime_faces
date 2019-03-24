@@ -27,15 +27,15 @@
 
 
 
-            <p:dataTable var="equipement" value="#{equipementBean.equipementService.findAll}">
-                <p:column headerText="Id">
-                    <h:outputText value="#{equipement.id}" />
+            <p:dataTable var="equipement" value="#{equipementBean.equipementService.findAll()}">
+               <p:column headerText="Id">
+                    !--<h:outputText value="#{equipement.id}" />
                 </p:column>
 
-                <p:column headerText="Equipement Label">
+               <p:column headerText="Equipement Label">
                     <h:outputText value="#{equipement.labelEquipement}" />
-                </p:column>
-            </p:dataTable>
+             </p:column>-->
+           </p:dataTable>
 
         </ui:define>
     </ui:composition>

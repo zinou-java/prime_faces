@@ -19,7 +19,8 @@
 		<property name="locations">
 			<list>
 
-				<value>file:C:/mesrs/work/resources/progres/database.properties</value>
+
+                <value>classpath:db.properties</value>
 
 			</list>
 		</property>
